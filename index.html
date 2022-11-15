@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="jp">
+
+<head>
+    <meta charset="utf-8">
+    <title>ポコパンパワー計算機！</title>
+</head>
+
+<body>
+    <h1>パワー計算機！</h1>
+    <div>
+        進化前の初期パワー<br><input type="number" id="before_power">
+    </div>
+    <br>
+    <div>
+        進化前の年齢<br><input type="number" id="before_yo">
+    </div>
+    <br>
+    <div>
+        進化前のスポット強化回数<br>
+        <div>
+            <input type="radio" name="before_spot" value="0" checked>0
+            <input type="radio" name="before_spot" value="1">1
+            <input type="radio" name="before_spot" value="2">2
+            <input type="radio" name="before_spot" value="3">3
+            <input type="radio" name="before_spot" value="4">4
+            <input type="radio" name="before_spot" value="5">5
+        </div>
+    </div>
+    <br>
+    <div><strong>進化済み？(NOに入れると進化後のパワーが計算されません。)</strong><br>
+        <div>
+            <input type="radio" name="isevolution" value="no" checked>NO
+            <input type="radio" name="isevolution" value="yes">YES
+        </div>
+    </div>
+    <br>
+    <div id="after">
+        <div>
+            進化前のパワーの引継ぎ(%)<br><input type="number" id="takeover">%
+        </div>
+        <br>
+        <div>
+            進化後の初期パワー<br><input type="number" id="after_power">
+        </div>
+        <br>
+        <div>
+            進化後の年齢<br><input type="number" id="after_yo">
+        </div>
+        <br>
+        <div>
+            進化後のスポット強化回数<br>
+            <div>
+                <input type="radio" name="after_spot" value="0" checked>0
+                <input type="radio" name="after_spot" value="1">1
+                <input type="radio" name="after_spot" value="2">2
+                <input type="radio" name="after_spot" value="3">3
+                <input type="radio" name="after_spot" value="4">4
+                <input type="radio" name="after_spot" value="5">5
+                <input type="radio" name="after_spot" value="6">6
+                <input type="radio" name="after_spot" value="7">7
+                <input type="radio" name="after_spot" value="8">8
+                <input type="radio" name="after_spot" value="9">9
+                <input type="radio" name="after_spot" value="10">10
+            </div>
+        </div>
+        <br>
+    </div>
+    <button id="button" onclick="calc()">計算する！</button>
+    <h2 id="result">ここにパワーが出ます。</h2>
+    <script src="power.js"></script>
+</body>
+
+</html>
